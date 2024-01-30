@@ -1,7 +1,7 @@
 
 Welcome to your new dbt project!
 
-### Using the starter project
+### Fire Incidents with DBT and postgres using Docker
 
 Try running the following commands:
 - dbt run

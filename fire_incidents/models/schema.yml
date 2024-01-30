@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: stg_incidents
+    description: "A starter dbt model"
+    columns:
+      - name: incident_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: address
+      - name: battalion
+      - name: time_period
+      - name: district
+      - name: point

@@ -1,0 +1,23 @@
+version: 2
+
+seeds:
+  - name: fire_incidents_custom
+    description: > 
+      Fire Incidents public CSV file from https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric/about_data
+      limited to 12 columns
+    columns: 
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: address
+      - name: incident_date
+      - name: city
+      - name: zipcode
+      - name: battalion
+      - name: station_area
+      - name: action_taken_primary
+      - name: property_use
+      - name: ignition_cause
+      - name: neighborhood_district
+      - name: point
