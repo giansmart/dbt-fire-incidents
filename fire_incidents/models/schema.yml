@@ -14,6 +14,8 @@ models:
       - name: battalion
       - name: time_period
       - name: district
+        tests:
+          - not_null
       - name: point
   
   - name: stg_incidents_district
