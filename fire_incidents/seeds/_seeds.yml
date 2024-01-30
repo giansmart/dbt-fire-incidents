@@ -1,7 +1,7 @@
 version: 2
 
 seeds:
-  - name: fire_incidents_custom
+  - name: fire_incidents_raw
     description: > 
       Fire Incidents public CSV file from https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric/about_data
       limited to 12 columns

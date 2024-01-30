@@ -3,10 +3,10 @@ version: 2
 
 models:
   - name: stg_incidents
-    description: "A starter dbt model"
+    description: A clean model of the incidents
     columns:
       - name: incident_id
-        description: "The primary key for this table"
+        description: The primary key for this table
         tests:
           - unique
           - not_null
@@ -15,3 +15,18 @@ models:
       - name: time_period
       - name: district
       - name: point
+  
+  - name: stg_incidents_district
+    description: "Fires by district"
+    columns:
+      - name: district
+        description: The district where the fire happened
+        tests:
+          - unique
+          - not_null
+      - name: times_happened
+        description: The number of times that a fire was triggered in a specific district
+      - name: first_fire
+        description: The first time (date) a fire happened in in a specific district
+      - name: last_fire
+        description: The last time a fire (date) happened in in a specific district
