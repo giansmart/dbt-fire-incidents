@@ -1,0 +1,9 @@
+Create the python virtual environment:
+python3.12 -m venv dbt-venv 
+
+activate v. environment 
+source dbt-venv/bin/activate
+
+Install dbt-postgres
+pip install dbt-postgres
+
